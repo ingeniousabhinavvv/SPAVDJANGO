@@ -1,8 +1,8 @@
-from django.contrib import admin
 from django.urls import path
 from .import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('admin/', admin.site.urls),
+    path('noticeboard/', views.noticeboard, name='noticeboard'),
+    path('gallery/', views.gallery, name='gallery'),
 ]
